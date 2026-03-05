@@ -1,0 +1,27 @@
+# Secrets and local runtime files
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.p12
+
+# Build/runtime artifacts
+node_modules/
+dist/
+build/
+coverage/
+*.log
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+
+# Private district-specific materials (keep local)
+internal/
+
+docs/private/
+
+# Local overrides
+districts/*/district.local.yaml

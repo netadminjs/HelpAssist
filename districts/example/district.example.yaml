@@ -1,0 +1,29 @@
+district:
+  name: Example School District
+  timezone: America/New_York
+  language_default: en
+
+support_hours:
+  weekday_start: "07:30"
+  weekday_end: "16:30"
+  weekend_intake_enabled: true
+
+telephony:
+  adapter: asterisk-agi
+  handoff_mode: ata
+  extension_placeholder: "11842"
+
+ticket_delivery:
+  adapter: email-to-ticket
+  destination_email: support@example.org
+  sender_map:
+    CENTRAL: hd-intake-central@example.org
+
+retention:
+  recordings_days: 30
+  transcripts_days: 30
+
+sites:
+  - code: CENTRAL
+    name: Central Office IT
+    aliases: [CO, IT, HELPDESK]
