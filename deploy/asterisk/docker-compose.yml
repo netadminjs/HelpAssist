@@ -1,6 +1,6 @@
 services:
   asterisk:
-    image: asterisk/asterisk:20
+    image: andrius/asterisk:latest
     container_name: helpassist-asterisk
     restart: unless-stopped
     ports:
@@ -12,4 +12,3 @@ services:
       - TZ=America/New_York
     volumes:
       - ./config:/etc/asterisk
-
