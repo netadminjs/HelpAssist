@@ -24,6 +24,7 @@ See [portable-plugin-architecture.md](/Users/james.saniger/Library/CloudStorage/
 - `plugins/` telephony/ticket/speech adapters
 - `districts/example/` safe sample district config
 - `docs/` public docs and implementation guidance
+- `deploy/` prototype deployment assets (Asterisk Docker starter included)
 - `internal/` private district notes (git-ignored)
 
 ## Quick Start (Scaffold Stage)
