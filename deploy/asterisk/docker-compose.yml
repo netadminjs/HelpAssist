@@ -11,4 +11,7 @@ services:
     environment:
       - TZ=America/New_York
     volumes:
-      - ./config:/etc/asterisk
+      - ./config/pjsip.conf:/etc/asterisk/pjsip.conf:ro
+      - ./config/extensions.conf:/etc/asterisk/extensions.conf:ro
+      - ./config/http.conf:/etc/asterisk/http.conf:ro
+      - ./config/ari.conf:/etc/asterisk/ari.conf:ro
